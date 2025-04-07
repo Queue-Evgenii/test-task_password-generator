@@ -34,6 +34,7 @@ export class AppComponent {
 
   generate() {
     this.error = '';
+    this.password = '';
     this.isLoading = true;
     this.passwordService.generatePassword(this.passwordOptions)
       .subscribe({
